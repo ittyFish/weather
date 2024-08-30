@@ -50,9 +50,7 @@ const Weather = () => {
               accurate to {format(new Date(weatherData.location.localtime.slice(0, 10)), 'dd/MM/yy')} at {weatherData.location.localtime.slice(11)} </>}
           </p>
 
-
         </div>
-
 
         <div className="right-panel">
 
