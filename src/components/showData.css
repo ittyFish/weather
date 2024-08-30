@@ -1,0 +1,117 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 90%;
+    /* UI Properties */
+    background: #DDE4E6 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 40px;
+    margin-left: 8%;
+}
+
+.weather-display {
+    text-align: center;
+    background-color: #3a7b8a;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 70%;
+    height: 80%;
+    background: #27737D 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+    gap: 5px; */
+}
+
+.weather-display .temperature {
+    margin-top: 30px;
+
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.weather-display h2,
+.weather-display p,
+.temperature,
+.details,
+.weather-display div {
+    margin: 0px;
+}
+
+.details,
+.forecast {
+    display: flex;
+}
+
+.weather-display h2 {
+    text-align: center;
+    font: normal normal normal 26px/26px Heebo;
+    letter-spacing: 0px;
+    color: #E8F1F2;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+
+.weather-display p {
+    font: normal normal 300 22px/22px Heebo;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #A8C6CB;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.weather-display .details {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.weather-display .forecast {
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.frame .weather-display .forecast .forecast-item .time-containe .temp {
+    color: black;
+    border: 10px solid black;
+
+}
+
+@media (max-width: 1300px) {
+    .frame {
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    .weather-display .details span {
+        font: normal normal 300 20px/20px Heebo;
+        width: 150px;
+    }
+}
+
+@media (max-width:1030px) {
+    .frame {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width:905px) {
+    .frame {
+        width: 100%;
+        margin: 0%;
+        padding: 10% 10% 10% 0px;
+    }
+
+
+}
